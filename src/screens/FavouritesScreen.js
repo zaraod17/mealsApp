@@ -10,7 +10,7 @@ import MealList from '../components/MealList';
 
 const FavouritesScreen = props => {
 
-    const favMeals = useSelector(state => state.meals.favouriteMeals)
+    const favMeals = useSelector(state => state.meals.favoriteMeals);
 
     if (favMeals.length === 0 || !favMeals) {
         return <View style={styles.content}>

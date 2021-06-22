@@ -21,6 +21,7 @@ const CategoryMealScreen = props => {
     return <View style={styles.content}><DefaultText>No meals found, maybe check your filters...</DefaultText></View>
   }
 
+  console.log(availableMeals);
   return (
     <MealList
       listData={displayedMeals}
