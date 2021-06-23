@@ -38,6 +38,7 @@ const App = () => {
   }
 
   LogBox.ignoreAllLogs();
+  
 
   return (
     <Provider store={store} ><MainNavigator /></Provider>
