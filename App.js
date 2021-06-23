@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading'; 
 import { createStore, combineReducers } from 'redux';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import { LogBox } from 'react-native';
 
 import MainNavigator from './src/navigation/MealsNavigator';
 import {enableScreens } from 'react-native-screens';
@@ -35,6 +36,8 @@ const App = () => {
       />
     );
   }
+
+  LogBox.ignoreAllLogs();
 
   return (
     <Provider store={store} ><MainNavigator /></Provider>
